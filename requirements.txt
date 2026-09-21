@@ -1,0 +1,5 @@
+fastapi>=0.110,<1.0
+uvicorn[standard]>=0.29
+sqlalchemy>=2.0
+pydantic>=2.6
+jsonschema>=4.21

@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    container_name: schema-compat-api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:////app/data/analyses.db
+    volumes:
+      - schema-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  schema-data:
